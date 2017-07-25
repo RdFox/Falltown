@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Cutscenes>
+    <scene id="1">
+        <Boss id="1">Thahaha. Du denkst also du wärst ein Held?</Boss>
+        <Boss id="2">Es gibt keine Helden. Nicht in unserer Welt.</Boss>
+        <Boss id="3">Es gibt nur uns und euch. Wölfe und Schafe.</Boss>
+        <Boss id="4">Mich und dich.</Boss>
+        <Boss id="5">Die Mühle und Don Quijote.</Boss>
+        <Boss id="6">Mach dich bereit, zu sterben!</Boss>
+    </scene>
+</Cutscenes>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Cutscenes>
+    <scene id="1">
+        <Bandit id="1">Ha! Du bist uns in die Falle gegangen!</Bandit>
+        <Bandit id="2">Jetzt kommst du hier nicht mehr raus...</Bandit>
+        <Bandit id="3">Wir machen dich kalt!</Bandit>
+    </scene>
+</Cutscenes>

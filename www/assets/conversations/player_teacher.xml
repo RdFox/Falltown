@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Cutscenes>
+    <scene id="1">
+        <Teacher id="1">So, du willst also gegen eine Legende Kämpfen, Jüngling? </Teacher>
+        <Teacher id="2">Das kannst du haben!</Teacher>
+    </scene>
+</Cutscenes>

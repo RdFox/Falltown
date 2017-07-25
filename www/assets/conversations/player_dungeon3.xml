@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Cutscenes>
+    <scene id="1">
+        <Bandit id="1">Neeeein, ich habe ihn Enttäuscht.</Bandit>
+        <Bandit id="2">Wie konnte das passieren?.</Bandit>
+        <Bandit id="3">Gegen einen Versager wie dich? </Bandit>
+        <Bandit id="4"> Das wird er mir nie verzeihen! </Bandit>
+        <Bandit id="5">Nein, nein, das wird er DIR nie verzeihen!</Bandit>
+        <Bandit id="6">Geh nur zur Schlachtbank, er wartet auf dich!</Bandit>
+    </scene>
+</Cutscenes>

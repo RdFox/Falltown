@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="de.hhn.lg.falltown" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Falltown</name>
+    <description>
+        Ein RPG fürs Smartphone
+    </description>
+      <icon src="img/logo.png" width="512" height="512"/>
+      <icon src="img/logo_72.png" width="72" height="72" density="ldpi"/>
+    <author email="email@hs-heilbronn.de" href="http://cordova.io">
+        FalltownRPG-Team
+    </author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    <preference name="Fullscreen" value="true" />
+    <preference name="Orientation" value="landscape" />
+    <preference name="LogLevel" value="VERBOSE"/>
+</widget>

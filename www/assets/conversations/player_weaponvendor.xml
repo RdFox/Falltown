@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Cutscenes>
+    <scene id="1">
+        <Vendor id="1">Toll, dass du mal vorbeischaust.</Vendor>
+        <Vendor id="2">Kauf dir was Schönes!</Vendor>
+    </scene>
+</Cutscenes>

@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Falltown RPG</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8"/>
+    <link rel="icon" href="favicon.ico?v=3"/>
+
+    <meta http-equiv="X-UA-Compatible" content="chrome=1, IE=9">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="robots" content="noindex,nofollow"/>
+    <meta name="viewport" content="initial-scale=1 maximum-scale=1 user-scalable=0 minimal-ui"/>
+    <!--<link rel="icon" type="image/png" href="assets/favicon.png" />-->
+
+    <!--<script type="text/javascript" charset="utf-8" src="cordova.js"></script>-->
+    <script src="lib/underscore.js"></script>
+
+    <script src="lib/phaser.js"></script>
+    <script src="lib/phaser-debug.js"></script>
+    <script src="lib/screenshake.js"></script>
+
+
+    <script src="js/state/Boot.js"></script>
+    <script src="js/util/Movement.js"></script>
+    <script src="js/util/ProductHelper.js"></script>
+    <script src="js/static/Style.js"></script>
+    <script src="lib/dialogue.js"></script>
+    <script src="js/model/Exception.js"></script>
+    <script src="js/state/battle/Battle.js"></script>
+    <script src="js/state/Dungeon.js"></script>
+    <script src="js/state/battle/Inventory.js"></script>
+    <script src="js/state/Preloader.js"></script>
+    <script src="js/state/menu/MainMenu.js"></script>
+    <script src="js/state/menu/IngameMenu.js"></script>
+    <script src="js/state/menu/IngameInventory.js"></script>
+    <script src="js/state/menu/IngameStats.js"></script>
+    <script src="js/state/menu/Credits.js"></script>
+    <script src="js/state/menu/StartDialog.js"></script>
+    <script src="js/state/Falltown.js"></script>
+    <script src="js/state/Skill.js"></script>
+    <script src="js/state/Afterfall.js"></script>
+    <script src="js/state/Store.js"></script>
+    <script src="js/component/TextButton.js"></script>
+    <script src="js/component/Infobar.js"></script>
+    <script src="js/component/StoreItem.js"></script>
+    <script src="js/component/ConfirmDialogue.js"></script>
+    <script src="js/component/ProgressBar.js"></script>
+    <script src="js/static/Constants.js"></script>
+    <script src="js/model/Munition.js"></script>
+    <script src="js/model/Weapon.js"></script>
+    <script src="js/model/Armour.js"></script>
+    <script src="js/static/Weapons.js"></script>
+    <script src="js/static/Munitions.js"></script>
+    <script src="js/static/Armours.js"></script>
+    <script src="js/model/Food.js"></script>
+    <script src="js/static/Foods.js"></script>
+    <script src="js/model/Enemy.js"></script>
+    <script src="js/static/Enemies.js"></script>
+    <script src="js/model/FighterSprite.js"></script>
+    <script src="js/model/Player.js"></script>
+
+
+    <script src="js/controller/BattleController.js"></script>
+    <script src="js/controller/DungeonController.js"></script>
+    <script src="js/controller/WeaponStoreController.js"></script>
+    <script src="js/controller/FoodStoreController.js"></script>
+    <script src="js/controller/FalltownController.js"></script>
+    <script src="js/controller/AfterfallController.js"></script>
+    <script src="js/controller/GameController.js"></script>
+    <script src="js/controller/LocalStorageController.js"></script>
+    <script src="js/controller/GameSetupController.js"></script>
+
+</head>
+<body>
+
+<div style="height: 99vh" id="gameContainer"></div>
+<div id="orientation"></div>
+
+<script type="text/javascript">
+
+    (function (c) {
+        // as of https://www.samclarke.com/2013/06/javascript-is-font-available/
+        var b, d, e, f, g, h = c.body, a = c.createElement("div");
+        a.innerHTML = '<span style="' + ["position:absolute", "width:auto", "font-size:128px", "left:-99999px"].join(" !important;") + '">' + Array(100).join("wi") + "</span>";
+        a = a.firstChild;
+        b = function (b) {
+            a.style.fontFamily = b;
+            h.appendChild(a);
+            g = a.clientWidth;
+            h.removeChild(a);
+            return g
+        };
+        d = b("monospace");
+        e = b("serif");
+        f = b("sans-serif");
+        window.loadFont = function (a) {
+            return d !== b(a + ",monospace") || f !== b(a + ",sans-serif") || e !== b(a + ",serif")
+        }
+    })(document);
+
+    window.onload = function () {
+        var screenVals = FTRPG.Constants.GameScreen;
+        var game = new Phaser.Game(screenVals.width, screenVals.height, screenVals.renderer, 'gameContainer');
+        //	Add the States
+        game.state.add('Boot', FTRPG.State.Boot);
+        game.state.add('Preloader', FTRPG.State.Preloader);
+        game.state.add('MainMenu', FTRPG.State.MainMenu);
+        game.state.add('Game', FTRPG.State.Game);
+        game.state.add('Falltown', FTRPG.State.Falltown);
+        game.state.add('Afterfall', FTRPG.State.Afterfall);
+        game.state.add('Battle', FTRPG.State.Battle);
+        game.state.add('Dungeon', FTRPG.State.Dungeon);
+        game.state.add('Store', FTRPG.State.Store);
+        game.state.add('Skill', FTRPG.State.Skill);
+
+        //	Now start the Boot state.
+        game.state.start('Boot');
+    };
+
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady() {
+        document.addEventListener("backbutton", function (e) {
+            e.preventDefault();
+        }, false);
+    }
+
+</script>
+</body>
+</html>

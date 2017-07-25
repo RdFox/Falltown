@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Cutscenes>
+    <scene id="1">
+        <Bandit id="1">Pfah, das bedeutet gar nichts, ...</Bandit>
+        <Bandit id="2">... meine Freunde werden mich Rächen! </Bandit>
+        <Bandit id="3">Geh nur weiter, du wirst schon sehen.</Bandit>
+    </scene>
+</Cutscenes>

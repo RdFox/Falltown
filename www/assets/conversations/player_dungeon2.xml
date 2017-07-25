@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Cutscenes>
+    <scene id="1">
+        <Bandit id="1">Das sind nicht die Droiden die wir suchen!</Bandit>
+        <Bandit id="2">Er kann passieren. </Bandit>
+        <Bandit id="3"> Weiterfahren, weiterfahren!</Bandit>
+    </scene>
+</Cutscenes>

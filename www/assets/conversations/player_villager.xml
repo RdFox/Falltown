@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Cutscenes>
+    <scene id="1">
+        <Villager id="1">Hey, psst! Komm her, ich verrate dir was!</Villager>
+        <Villager id="2">Egal was du tust, wirklich egal was du tust,</Villager>
+        <Villager id="3">Iss niemals das seltsame Fleisch vom Händler!</Villager>
+        <Villager id="4">Für das sind schon einige verreckt...</Villager>
+    </scene>
+</Cutscenes>

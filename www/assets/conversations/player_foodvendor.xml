@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Cutscenes>
+    <scene id="1">
+        <Vendor id="1">Hast du Hunger? Willst dich stärken für den Kampf?</Vendor>
+        <Vendor id="2">Versuch vor allem mal mein gutes Fleisch!</Vendor>
+        <Vendor id="3">Einer der Bewohner hats mir erst heute...gebracht...</Vendor>
+    </scene>
+</Cutscenes>
